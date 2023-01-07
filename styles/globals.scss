@@ -1,18 +1,19 @@
 $primary: #00adb5;
 $gray-darker: #222831;
+$gray-darkerer: #171b22;
 $gray-dark: #393e46;
-$gray-light: #eeeeee;
+$gray-light: #dddddd;
 
 @import "./components/login/login.scss";
 
 body {
   height: 100vh;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
 }
 
-input[type="text"] {
-  font-family: "Montserrat";
-}
+// input[type="text"] {
+  // font-family: "Montserrat";
+// }
 
 #__next {
   width: 100%;

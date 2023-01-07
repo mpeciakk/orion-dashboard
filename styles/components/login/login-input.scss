@@ -1,56 +1,31 @@
-.login-input {
-  width: 100%;
-  height: 32px;
-  border: none;
-  outline: none;
-  color: black;
-  font-size: 1em;
+.login-input-block {
+  text-align: left;
 
-  &-container {
-    position: relative;
-    overflow: hidden;
-    height: 56px;
-    display: flex;
-    align-items: flex-end;
+  &-username {
+    margin-bottom: 1rem;
   }
 
-  &-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  span {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: rgba(35, 8, 32, 1);
+  }
+
+  input[type="text"],
+  input[type="password"] {
     width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid $gray-darker;
+    padding: 8px;
+    border: solid 1px $gray-light;
+    border-radius: 0.25rem;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: border 0.3s ease;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 100%;
-      width: 100%;
-      border-bottom: 3px solid $primary;
-      transform: translateX(-100%);
-      transition: all 0.3s ease;
+    &:focus,
+    &:valid {
+      border: 1px solid $primary;
     }
-
-    .content {
-      position: absolute;
-      bottom: 5px;
-      left: 0;
-      transition: all 0.3s ease;
-    }
-  }
-
-  &:focus + .login-input-label .content,
-  &:valid + .login-input-label .content {
-    transform: translateY(-110%);
-    font-size: 0.7em;
-  }
-
-  &:focus + .login-input-label::after,
-  &:valid + .login-input-label::after {
-    transform: translateX(0%);
   }
 }
