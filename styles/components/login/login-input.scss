@@ -1,0 +1,31 @@
+.login-input-block {
+  text-align: left;
+
+  &-username {
+    margin-bottom: 1rem;
+  }
+
+  span {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: rgba(35, 8, 32, 1);
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: solid 1px $gray-light;
+    border-radius: 0.25rem;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: border 0.3s ease;
+
+    &:focus,
+    &:valid {
+      border: 1px solid $primary;
+    }
+  }
+}
