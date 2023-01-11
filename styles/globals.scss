@@ -2,20 +2,38 @@ $primary: #00adb5;
 $gray-darker: #222831;
 $gray-darkerer: #171b22;
 $gray-dark: #393e46;
-$gray-light: #dddddd;
+$gray-light: #f5f6fa;
+$gray-lighter: rgb(245, 245, 245);
+$gray-lighterer: rgb(251, 251, 251);
 
 @import "./components/login/login.scss";
+@import "./components/dashboard/dashboard.scss";
 
 body {
   height: 100vh;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
-
-// input[type="text"] {
-  // font-family: "Montserrat";
-// }
 
 #__next {
   width: 100%;
   height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  background: $gray-darker;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+
+  color: white;
+
+  &:hover {
+    background: $gray-darkerer;
+  }
 }

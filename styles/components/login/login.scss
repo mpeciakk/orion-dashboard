@@ -1,5 +1,10 @@
-@import "./login-button.scss";
 @import "./login-input.scss";
+
+.login-button {
+  margin-top: 1rem;
+  font-size: 20px;
+  height: 3rem;
+}
 
 .login-wrapper {
   display: flex;

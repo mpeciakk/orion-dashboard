@@ -1,0 +1,42 @@
+.node {
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    // padding: 0 4rem;
+
+    .cards {
+      display: flex;
+      // justify-content: space-around;
+      // align-items: center;
+    }
+
+    .card {
+      width: 20rem;
+      height: 10rem;
+      background: white;
+      border: 1px solid gainsboro;
+    }
+
+    .apps {
+      // margin-top: 4rem;
+      width: 100%;
+      width: 100%;
+      border-left: 0;
+    }
+  }
+}

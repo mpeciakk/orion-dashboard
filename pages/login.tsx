@@ -27,7 +27,7 @@ export default function Login() {
             <label htmlFor="remember-me">Remember me</label>
           </div>
 
-          <button className="login-button">
+          <button className="login-button button">
             <span className="login-button-text">Log in</span>
           </button>
 
